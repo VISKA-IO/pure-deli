@@ -1,0 +1,32 @@
+.order-page .upsell-widget-wrapper .login-navigation .login-btn-back {
+  background-color: unset !important;
+  color: #000000 !important;
+}
+
+@media (min-width: 768px) {
+  .order-page .upsell-widget-wrapper .login-login-wrapper h1 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+  }
+
+  .order-page .upsell-widget-wrapper .login-login-wrapper p {
+    font-family: var(--font-body);
+    color: #212121;
+    margin-bottom: 20px;
+  }
+
+  .upsell-widget-wrapper
+    .CardInputNumber-section
+    .CardInputNumber-button-wrapper
+    .CardInputNumber-btn-main {
+    background-color: var(--color-olive) !important;
+    color: var(--color-white) !important;
+  }
+
+  .upsell-widget-wrapper
+    .CardInputNumber-section
+    .CardInputNumber-button-wrapper
+    .CardInputNumber-btn-main:disabled {
+    opacity: 0.5;
+  }
+}

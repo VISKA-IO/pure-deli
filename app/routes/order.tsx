@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import type { MetaFunction } from "react-router";
 import "./order.css";
 import "../styles/productPage.css";
+import "../styles/loginPage.css";
 
 const WIDGET_SRC = "https://widget.upsell.is/dist/index.js?v=2025-04-13";
 const STORE_ID = "6970d21403e86bbbf6a6d40c";
@@ -35,7 +36,7 @@ export default function Order() {
 
   return (
     <div className="order-page">
-      <div className="widget-container container!">
+      <div className="widget-container md:container!">
         <div style={{ maxWidth: "unset" }} id="upsell-widget" />
       </div>
     </div>
