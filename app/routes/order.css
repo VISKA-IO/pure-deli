@@ -44,7 +44,7 @@
   --upsell-divider: 230 228 220;
   --upsell-card-background: 255 255 255;
   --upsell-body-font-family: "General Sans", system-ui, sans-serif;
-  --upsell-headline-font-family: "Playfair Display", Georgia, serif;
+  --upsell-headline-font-family: "Moret", Georgia, serif;
   --upsell-body-text-transform: none;
   --upsell-headline-text-transform: none;
 }
@@ -62,7 +62,7 @@
 
 /* Category headings — regular serif, BLACK, not italic */
 .upsell-widget-wrapper .productSection-product-section .productSection-categoryHeading {
-  font-family: "Playfair Display", Georgia, serif !important;
+  font-family: "Moret", Georgia, serif !important;
   font-style: normal !important;
   font-size: 28px !important;
   color: #000 !important;
@@ -71,7 +71,7 @@
 
 /* Welcome heading */
 .upsell-widget-wrapper .productPage-welcome-section h2 {
-  font-family: "Playfair Display", Georgia, serif !important;
+  font-family: "Moret", Georgia, serif !important;
   font-style: italic !important;
   font-weight: 400 !important;
 }
