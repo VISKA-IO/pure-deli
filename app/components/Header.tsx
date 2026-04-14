@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { CloseIcon } from "./_shared/icons/CloseIcon";
 import { HamburgerIcon } from "./_shared/icons/HamburgerIcon";
+import { cn } from "../utils/cn";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -74,9 +75,10 @@ export default function Header() {
       </header>
 
       <div
-        className={`fixed inset-0 top-17 z-40 bg-header lg:hidden transition-all duration-300 ease-in-out ${
-          menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
-        }`}
+        className={cn(
+          "fixed inset-0 top-17 z-40 bg-header lg:hidden transition-all duration-300 ease-in-out",
+          menuOpen ? "opacity-100 visible" : "opacity-0 invisible",
+        )}
       >
         <nav className="container flex flex-col items-center gap-6 pt-40">
           {[
@@ -88,11 +90,12 @@ export default function Header() {
             <Link
               key={item.to}
               to={item.to}
-              className={`font-body text-2xl uppercase text-black transition-all duration-300 ${
+              className={cn(
+                "font-body text-2xl uppercase text-black transition-all duration-300",
                 menuOpen
                   ? "opacity-100 translate-y-0"
-                  : "opacity-0 -translate-y-3"
-              }`}
+                  : "opacity-0 -translate-y-3",
+              )}
               style={{
                 transitionDelay: menuOpen ? `${(i + 1) * 75}ms` : "0ms",
               }}

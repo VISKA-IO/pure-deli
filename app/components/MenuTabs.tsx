@@ -1,56 +1,136 @@
 import { useState } from "react";
+import { cn } from "../utils/cn";
 
 const categories = ["Vefjurnar", "Salötin", "Toastin"] as const;
 
 const menuItems = {
   Vefjurnar: [
-    { name: "Tuna Deli Salat", description: "Túnfiskur, maísólífur, avocado, gúrka, cherry tómatar, jurtaolía, egg og ostur.", price: "3.390 kr", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80" },
-    { name: "Vegan Salat", description: "Salötuflís, verðkunn, gúrka, cherry tómatar, jurtaolía, blönduð fræ og pesto.", price: "3.390 kr", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" },
-    { name: "Indian Chicken Salat", description: "Salat, tómatur, kjúklingur, avocado, gúrka, cherry tómatar, jurtaolía, egg og pesto.", price: "3.390 kr", image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=400&q=80" },
+    {
+      name: "Avocado Chicken",
+      description: "Kjúklingur, avókadó, tómatur, spínat og pestó",
+      price: "2.990 kr",
+      image: "/images/avocado-chicken.png",
+      url: "/order?category=697223eb47d171e0186713d7",
+    },
+    {
+      name: "Serrano vefja",
+      description: "Serrano hráskinka, pestó , Mozzarella, spínat og tómatar",
+      price: "3.290 kr",
+      image: "/images/serrano-vefja.png",
+      url: "/order?category=697223eb47d171e0186713d7",
+    },
+    {
+      name: "Indian Chicken",
+      description:
+        "Indian chicken, spínat, papríka og pestó (Inniheldur sojasósu/gluten)",
+      price: "3.190 kr",
+      image: "/images/indian-chicken.png",
+      url: "/order?category=697223eb47d171e0186713d7",
+    },
   ],
   Salötin: [
-    { name: "Vegan Salat", description: "Salötuflís, verðkunn, gúrka, cherry tómatar, jurtaolía, blönduð fræ og pesto.", price: "3.390 kr", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" },
-    { name: "Tuna Deli Salat", description: "Túnfiskur, maísólífur, avocado, gúrka, cherry tómatar, jurtaolía, egg og ostur.", price: "3.390 kr", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80" },
-    { name: "Indian Chicken Salat", description: "Salat, tómatur, kjúklingur, avocado, gúrka, cherry tómatar, jurtaolía, egg og pesto.", price: "3.390 kr", image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=400&q=80" },
+    {
+      name: "Vegan Salat",
+      description:
+        "Salatblanda, avókadó, gúrka , cherry tómatar, jarðaber, bláber, döðlur, hummus og pestó",
+      price: "3.190 kr",
+      image: "/images/vegan-salat-new.png",
+      url: "/order?category=697223fc7cf2afb6912549b6",
+    },
+    {
+      name: "Tuna Deli Salat",
+      description:
+        "Túnfiskur, salatblanda, avocado, gúrka , cherry tómatar, jarðaber, egg og pestó",
+      price: "3.290 kr",
+      image: "/images/tuna-deli-salat-new.png",
+      url: "/order?category=697223fc7cf2afb6912549b6",
+    },
+    {
+      name: "Indian Chicken Salat",
+      description:
+        "Salat blanda, kjúklingur , avocado, gúrka , cherry tómatar, jarðaber, egg & pestó (Inniheldur sojasósu/gluten)",
+      price: "3.390 kr",
+      image: "/images/indian-chicken-salat-new.png",
+      url: "/order?category=697223fc7cf2afb6912549b6",
+    },
   ],
   Toastin: [
-    { name: "Indian Chicken Salat", description: "Salat, tómatur, kjúklingur, avocado, gúrka, cherry tómatar.", price: "3.390 kr", image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=400&q=80" },
-    { name: "Tuna Deli Salat", description: "Túnfiskur, maísólífur, avocado, gúrka, cherry tómatar, jurtaolía, egg og ostur.", price: "3.390 kr", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80" },
-    { name: "Vegan Salat", description: "Salötuflís, verðkunn, gúrka, cherry tómatar, jurtaolía, blönduð fræ og pesto.", price: "3.390 kr", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" },
+    {
+      name: "Avocado Toast",
+      description: "Ristað súrdeigsbrauð, pestó, avókadó og tómatar.",
+      price: "2.990 kr",
+      image: "/images/avocado-toast.png",
+      url: "/order?category=697223c789f4922277697fda",
+    },
+    {
+      name: "Serrano - mozzarella toast",
+      description:
+        "Tvær ristaðar súrdeigsbrauðsneiðar með pestó, mozzarella, serrano hráskinku, tómatar & klettasalat",
+      price: "3.290 kr",
+      image: "/images/serrano-mozzarella-toast.png",
+      url: "/order?category=697223c789f4922277697fda",
+    },
+    {
+      name: "Tuna toast",
+      description:
+        "Tvær ristaðar súrdeigsbrauðsneiðar með pestó, tuna, avocado og tómat og pestó, tuna, jalapeno og tabasco.",
+      price: "2.990 kr",
+      image: "/images/tuna-toast.png",
+      url: "/order?category=697223c789f4922277697fda",
+    },
   ],
 };
 
 export default function MenuTabs() {
-  const [activeTab, setActiveTab] = useState<(typeof categories)[number]>("Salötin");
+  const [activeTab, setActiveTab] =
+    useState<(typeof categories)[number]>("Salötin");
 
   return (
-    <section className="py-16 px-16 max-w-[1200px] mx-auto">
-      <div className="flex items-center justify-center gap-10 mb-12">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setActiveTab(cat)}
-            className={`font-heading text-[24px] italic transition-colors cursor-pointer ${
-              activeTab === cat
-                ? "text-olive font-normal underline underline-offset-8 decoration-2 decoration-olive"
-                : "text-black/30 font-normal"
-            }`}
-          >
-            {cat}
-          </button>
-        ))}
-      </div>
-      <div className="grid grid-cols-3 gap-10">
-        {menuItems[activeTab].map((item, idx) => (
-          <div key={idx} className="flex flex-col">
-            <div className="aspect-square rounded-full overflow-hidden mb-5 bg-sage/50">
-              <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
-            </div>
-            <h3 className="font-body text-[17px] font-semibold text-black mb-2">{item.name}</h3>
-            <p className="font-body text-[13px] text-black/50 mb-3 leading-relaxed">{item.description}</p>
-            <p className="font-body text-[15px] font-semibold text-black mt-auto">{item.price}</p>
-          </div>
-        ))}
+    <section className="w-full">
+      <div className="container pt-13 lg:pt-25 pb-20 lg:pb-25">
+        <div className="flex items-center justify-center gap-7.5 lg:gap-4 mb-8 lg:mb-14">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveTab(cat)}
+              className={cn(
+                "font-heading lg:min-w-64.5 text-center text-[32px] lg:text-[52px] transition-colors cursor-pointer",
+                activeTab === cat
+                  ? "text-olive font-normal"
+                  : "text-black/30 font-normal",
+              )}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 -mx-[10%] px-[10%] lg:mx-0 lg:px-0 lg:grid lg:grid-cols-3 lg:gap-6 scrollbar-hide">
+          {menuItems[activeTab].map((item, idx) => (
+            <a
+              href={item.url}
+              key={idx}
+              className="flex flex-col min-w-[80%] snap-center lg:min-w-0"
+            >
+              <div className="aspect-square flex justify-center items-center rounded-[20px] overflow-hidden mb-4 lg:mb-6 bg-sage">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full max-w-[75%] h-full max-h-[75%] object-contain"
+                />
+              </div>
+              <h3 className="font-heading text-[24px] lg:text-[28px] text-black mb-3.5">
+                {item.name}
+              </h3>
+              <p className="font-body text-sm lg:text-base text-black mb-4 leading-relaxed">
+                {item.description}
+              </p>
+              <p className="font-body text-base lg:text-xl font-semibold text-black mt-auto">
+                {item.price}
+              </p>
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );
