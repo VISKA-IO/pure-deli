@@ -28,7 +28,7 @@ export default function Catering() {
         </div>
         <div className="w-full lg:w-[45%] h-auto aspect-85/100 overflow-hidden rounded-[20px]">
           <img
-            src="/images/img_catering.jpg"
+            src="/images/catering-image.png"
             alt="Catering food spread"
             className="w-full h-full object-center object-cover"
           />
