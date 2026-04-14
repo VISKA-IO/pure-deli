@@ -1,14 +1,19 @@
 import { useEffect } from "react";
-import "./Order.css";
+import type { MetaFunction } from "react-router";
+import "./order.css";
 
 const WIDGET_SRC = "https://widget.upsell.is/dist/index.js?v=2025-04-13";
 const STORE_ID = "6970d21403e86bbbf6a6d40c";
 
+export const meta: MetaFunction = () => [
+  { title: "Order - Pure Deli" },
+];
+
 export default function Order() {
   useEffect(() => {
     if (!window.upsell_widget) {
-      window.upsell_widget = function () {
-        (window.upsell_widget.q = window.upsell_widget.q || []).push(arguments);
+      window.upsell_widget = function (...args: unknown[]) {
+        (window.upsell_widget.q = window.upsell_widget.q || []).push(args);
       };
     }
 
