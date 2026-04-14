@@ -86,7 +86,7 @@ export default function MenuTabs() {
     useState<(typeof categories)[number]>("Salötin");
 
   return (
-    <section className="w-full">
+    <section className="w-full overflow-hidden">
       <div className="container pt-13 lg:pt-25 pb-20 lg:pb-25">
         <div className="flex items-center justify-center gap-7.5 lg:gap-4 mb-8 lg:mb-14">
           {categories.map((cat) => (

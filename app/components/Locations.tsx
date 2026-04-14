@@ -1,94 +1,100 @@
+import { ArrowRightIcon } from "./_shared/icons/ArrowRightIcon";
+
 const locations = [
   {
-    name: "Suðurlandsbraut 48",
-    subtitle: "(Bláu húsin)",
+    name: "Suðurlandsbraut 48 (Bláu húsin)",
     area: "108 Reykjavik",
-    district: "Ófanleiti",
     openLabel: "Opnunartímar:",
     weekdays: "9:00 - 20:00",
     weekends: "10:00 - 20:00",
-    image:
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80",
+    image: "/images/store-1.png",
+    mapUrl: "https://maps.app.goo.gl/86TseAoV9srqUknJA",
   },
   {
     name: "Bæjarlind 14-16",
-    subtitle: "",
     area: "203 Kópavogi",
-    district: "Garðastræti",
     openLabel: "Opnunartímar:",
     weekdays: "9:00 - 20:00",
     weekends: "10:00 - 20:00",
-    image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",
+    image: "/images/store-2.png",
+    mapUrl: "https://maps.app.goo.gl/9PsLDeaFbzZzxXhF8",
   },
 ];
 
 export default function Locations() {
   return (
-    <section className="py-16 px-16 max-w-[1200px] mx-auto">
-      <p className="font-body text-sm font-medium uppercase tracking-widest text-black/50 mb-2">
-        Visit Store
-      </p>
-      <h2 className="font-heading text-[48px] italic font-normal text-black mb-12">
-        Útibúin okkar
-      </h2>
-      <div className="grid grid-cols-2 gap-8">
-        {locations.map((loc, idx) => (
-          <div
-            key={idx}
-            className="flex gap-6 rounded-xl border border-black/10 p-6"
-          >
-            <div className="flex-1">
-              <h3 className="font-body text-xl font-semibold text-black mb-1">
-                {loc.name}
-                {loc.subtitle && (
-                  <span className="font-normal text-black/50">
-                    {" "}
-                    {loc.subtitle}
-                  </span>
-                )}
-              </h3>
-              <p className="font-body text-sm text-black/60 mb-1">{loc.area}</p>
-              <p className="font-body text-sm text-black/60 mb-3">
-                {loc.district}
-              </p>
-              <p className="font-body text-xs font-semibold text-black mb-2">
-                Opnunartímar:
-              </p>
-              <div className="flex gap-6 mb-4">
-                <div>
-                  <p className="font-body text-xs text-black/40 mb-1">
-                    Virka daga
-                  </p>
-                  <p className="font-body text-sm font-medium text-black">
-                    {loc.weekdays}
-                  </p>
+    <section className="w-full">
+      <div className="w-full container pt-9 md:pt-12.5 pb-25 md:pb-37.5">
+        <p className="font-body text-lg md:text-xl font-medium uppercase text-olive mb-3.5">
+          Visit Store
+        </p>
+        <h2 className="font-heading text-[38px] md:text-[52px] font-normal text-black mb-8 md:mb-10">
+          Útibúin okkar
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+          {locations.map((loc, idx) => (
+            <a
+              href={loc.mapUrl}
+              target="_blank"
+              key={idx}
+              className="flex flex-col-reverse md:flex-row md:items-stretch gap-5.5 md:gap-40 rounded-[20px] bg-off-white p-4.5 md:p-6"
+            >
+              <div className="flex-1 flex flex-col">
+                <div className="w-full flex gap-5">
+                  <h3 className="flex-1 font-heading text-[26px] md:text-[32px] text-black mb-3 md:mb-1">
+                    {loc.name}
+                  </h3>
+
+                  <div className="md:hidden mt-2 h-fit flex font-body text-base font-medium uppercase text-olive items-center gap-1">
+                    Open map
+                    <ArrowRightIcon className="w-4.5 h-4.5" />
+                  </div>
                 </div>
-                <div>
-                  <p className="font-body text-xs text-black/40 mb-1">
-                    Um helgar
-                  </p>
-                  <p className="font-body text-sm font-medium text-black">
-                    {loc.weekends}
-                  </p>
+
+                <p className="font-body text-base text-black mb-4">
+                  {loc.area}
+                </p>
+
+                <p className="font-body text-sm md:text-[15px] font-medium text-black mb-2">
+                  Opnunartímar:
+                </p>
+
+                <div className="flex gap-8 md:gap-7 md:mb-6.5">
+                  <div>
+                    <p className="font-body text-sm md:text-[15px] text-black mb-1">
+                      Virka daga
+                    </p>
+                    <p className="font-body text-sm md:text-[15px] text-black">
+                      {loc.weekdays}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="font-body text-sm md:text-[15px] text-black mb-1">
+                      Um helgar
+                    </p>
+                    <p className="font-body text-sm md:text-[15px] text-black">
+                      {loc.weekends}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="md:flex hidden font-body mt-auto text-base font-medium uppercase text-olive items-center gap-2">
+                  Open map
+                  <ArrowRightIcon className="w-6 h-6" />
                 </div>
               </div>
-              <a
-                href="#"
-                className="font-body text-xs font-medium uppercase tracking-[0.15em] text-black flex items-center gap-1"
-              >
-                Open map <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
-            <div className="w-48 h-36 shrink-0 overflow-hidden rounded-lg">
-              <img
-                src={loc.image}
-                alt={loc.name}
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </div>
-        ))}
+
+              <div className="w-full md:w-61.75 h-49 md:h-auto md:aspect-92/100 overflow-hidden rounded-[10px]">
+                <img
+                  src={loc.image}
+                  alt={loc.name}
+                  className="h-full w-full object-center object-cover"
+                />
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );
