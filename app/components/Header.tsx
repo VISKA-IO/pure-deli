@@ -58,12 +58,12 @@ export default function Header() {
           </Link>
 
           <div className="flex items-center gap-5.5">
-            <Link
-              to="/account"
+            <a
+              href="/order#!/my-account/my-order"
               className="hidden md:block font-body text-base uppercase text-black"
             >
               Account
-            </Link>
+            </a>
             <a
               href="/order"
               className="rounded-full bg-olive px-4 py-2 lg:py-2.5 font-body font-medium text-sm lg:text-base uppercase text-white"
@@ -85,7 +85,6 @@ export default function Header() {
             { to: "/menu", label: "Menu" },
             { to: "/party", label: "Party" },
             { to: "/news", label: "News" },
-            { to: "/account", label: "Account" },
           ].map((item, i) => (
             <Link
               key={item.to}
@@ -104,6 +103,22 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
+
+          <a
+            href="/order#!/my-account/my-order"
+            className={cn(
+              "font-body text-2xl uppercase text-black transition-all duration-300",
+              menuOpen
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 -translate-y-3",
+            )}
+            style={{
+              transitionDelay: menuOpen ? `${4 * 75}ms` : "0ms",
+            }}
+            onClick={() => setMenuOpen(false)}
+          >
+            Account
+          </a>
         </nav>
       </div>
     </>

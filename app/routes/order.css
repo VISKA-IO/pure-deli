@@ -2,6 +2,7 @@
   width: 100%;
   min-height: 100vh;
   background-color: #fff;
+  padding-top: 40px;
 }
 
 .order-header {
@@ -61,7 +62,9 @@
    =========================== */
 
 /* Category headings — regular serif, BLACK, not italic */
-.upsell-widget-wrapper .productSection-product-section .productSection-categoryHeading {
+.upsell-widget-wrapper
+  .productSection-product-section
+  .productSection-categoryHeading {
   font-family: "Moret", Georgia, serif !important;
   font-style: normal !important;
   font-size: 28px !important;
@@ -72,7 +75,6 @@
 /* Welcome heading */
 .upsell-widget-wrapper .productPage-welcome-section h2 {
   font-family: "Moret", Georgia, serif !important;
-  font-style: italic !important;
   font-weight: 400 !important;
 }
 
@@ -130,7 +132,9 @@
 }
 
 .upsell-widget-wrapper .productPage-side-bar .productPage-side-bar-item.active,
-.upsell-widget-wrapper .productPage-side-bar .productPage-side-bar-item[class*="active"] {
+.upsell-widget-wrapper
+  .productPage-side-bar
+  .productPage-side-bar-item[class*="active"] {
   background-color: #7d8959 !important;
   color: #fff !important;
 }
@@ -162,7 +166,10 @@
 }
 
 /* CRITICAL: override absolute positioning so sage padding shows */
-.upsell-widget-wrapper .menu-menu-item .menu-menu-image-wrapper .menu-menu-image {
+.upsell-widget-wrapper
+  .menu-menu-item
+  .menu-menu-image-wrapper
+  .menu-menu-image {
   position: static !important;
   inset: auto !important;
   top: auto !important;
@@ -175,7 +182,11 @@
   border-radius: 0 !important;
 }
 
-.upsell-widget-wrapper .menu-menu-item .menu-menu-image-wrapper .menu-menu-image img {
+.upsell-widget-wrapper
+  .menu-menu-item
+  .menu-menu-image-wrapper
+  .menu-menu-image
+  img {
   object-fit: contain !important;
   border-radius: 0 !important;
   width: 100% !important;
@@ -252,14 +263,20 @@
 }
 
 /* Add to Cart button on cards */
-.upsell-widget-wrapper .menu-menu-item button.menu-btn-add-to-cart span.menu-before-animation {
+.upsell-widget-wrapper
+  .menu-menu-item
+  button.menu-btn-add-to-cart
+  span.menu-before-animation {
   color: #7d8959 !important;
   border: 1px solid #7d8959 !important;
   border-radius: 999px !important;
   padding: 8px 16px !important;
 }
 
-.upsell-widget-wrapper .menu-menu-item button.menu-btn-add-to-cart:hover span.menu-before-animation {
+.upsell-widget-wrapper
+  .menu-menu-item
+  button.menu-btn-add-to-cart:hover
+  span.menu-before-animation {
   background: #7d8959 !important;
   color: #fff !important;
 }
@@ -304,7 +321,11 @@
 /* ===========================
    Detail Page
    =========================== */
-.upsell-widget-wrapper .DetailPage-detail-page .DetailPage-navigation .DetailPage-btn-back .DetailPage-chevron {
+.upsell-widget-wrapper
+  .DetailPage-detail-page
+  .DetailPage-navigation
+  .DetailPage-btn-back
+  .DetailPage-chevron {
   color: #7d8959 !important;
 }
 
@@ -316,19 +337,26 @@
   border-radius: 12px !important;
 }
 
-.upsell-widget-wrapper .VariantionSection-variantion-section .VariantionSection-variant-item .VariantionSection-heading h4 {
+.upsell-widget-wrapper
+  .VariantionSection-variantion-section
+  .VariantionSection-variant-item
+  .VariantionSection-heading
+  h4 {
   background-color: #7d8959 !important;
   color: #fff !important;
   border-radius: 6px !important;
 }
 
-.upsell-widget-wrapper .VariableAttribute-variant-item-list-item.VariableAttribute-variant-item-list-item-selected {
+.upsell-widget-wrapper
+  .VariableAttribute-variant-item-list-item.VariableAttribute-variant-item-list-item-selected {
   background-color: white !important;
   border: 2px solid #7d8959 !important;
   border-radius: 10px !important;
 }
 
-.upsell-widget-wrapper .ExtraSection-extra-item-list-item.ExtraSection-extra-item-list-item-selected .ExtraSection-wrapper {
+.upsell-widget-wrapper
+  .ExtraSection-extra-item-list-item.ExtraSection-extra-item-list-item-selected
+  .ExtraSection-wrapper {
   background-color: white !important;
   border: 2px solid #7d8959 !important;
   border-radius: 10px !important;
