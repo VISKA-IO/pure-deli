@@ -1,0 +1,395 @@
+.order-page .upsell-widget-wrapper .DealItem-order-item .DealItem-left {
+  gap: 12px;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .DealItem-order-item
+  .DealItem-left
+  .DealItem-item-detail
+  h4 {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .DealItem-order-item
+  .DealItem-left
+  .DealItem-item-detail
+  .DealItem-extra-wrapper {
+  margin-top: 4px;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .DealItem-order-item
+  .DealItem-left
+  .DealItem-item-detail
+  .DealItem-extra-wrapper
+  p {
+  font-family: var(--font-body);
+  color: #212121;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .DealItem-order-item
+  .DealItem-left
+  .DealItem-item-image {
+  border: 1px solid #efefef;
+  border-radius: 8px;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .deal-menu-item-menu-section.deal-menu-item-optional
+  h4 {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .DetailDeal-detail-deal-page
+  .DetailDeal-detail-deal-page-section
+  .DetailDeal-right-side
+  .DetailDeal-product-preview {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  background-color: #f4f3e7;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .DetailDeal-detail-deal-page
+  .DetailDeal-detail-deal-page-section
+  .DetailDeal-right-side
+  .DetailDeal-product-preview
+  img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  max-height: unset;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .DetailDeal-detail-deal-page
+  .DetailDeal-detail-deal-page-section
+  .DetailDeal-left-side
+  .DetailDeal-menus-sections {
+  border-color: #f4f4f4;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .deal-menu-item-menu-section
+  .deal-menu-item-heading {
+  background: #f4f3e7;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .deal-menu-item-menu-section
+  .deal-menu-item-heading
+  .deal-menu-item-btn-plus {
+  background: var(--color-olive);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .deal-menu-item-menu-section
+  .deal-menu-item-detail-menu
+  .deal-menu-item-btn-customize {
+  background: #f4f3e7;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .menu-list-item-product-card
+  .menu-list-item-btn-plus {
+  background: var(--color-olive);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .menu-list-item-product-card
+  .menu-list-item-detail
+  h4 {
+  font-family: var(--font-heading);
+  font-size: 18px;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .menu-list-item-product-card
+  .menu-list-item-detail
+  p {
+  font-family: var(--font-body);
+  color: #212121;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .modal-menu-list-wrapper
+  .modal-menu-list-header
+  .modal-menu-list-title
+  h2 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .modal-menu-list-wrapper
+  .modal-menu-list-header
+  .modal-menu-list-control
+  .modal-menu-list-search {
+  padding: 0 16px;
+  gap: 0px;
+}
+
+@media (min-width: 768px) {
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-navigation
+    .DetailDeal-btn-back
+    .DetailDeal-chevron {
+    color: var(--color-olive);
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-detail-deal-page-section
+    .DetailDeal-left-side
+    .DetailDeal-deal-page-section
+    .DetailDeal-heading
+    h1 {
+    font-weight: 700;
+    color: #000;
+    font-family: var(--font-heading);
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-detail-deal-page-section
+    .DetailDeal-left-side
+    .DetailDeal-deal-page-section
+    .DetailDeal-heading
+    span {
+    font-family: var(--font-body) !important;
+    color: #030002 !important;
+    font-size: 16px;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-detail-deal-page-section
+    h3 {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-detail-deal-page-section
+    .DetailDeal-left-side
+    .DetailDeal-add-to-cart-section
+    .DetailDeal-left
+    .DetailDeal-item-counter {
+    height: 48px;
+    border-radius: 99999px;
+    background-color: #f4f3e7;
+    border: 1px solid #efefef;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-detail-deal-page-section
+    .DetailDeal-left-side
+    .DetailDeal-add-to-cart-section
+    .DetailDeal-left
+    .DetailDeal-item-counter
+    button,
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-detail-deal-page-section
+    .DetailDeal-left-side
+    .DetailDeal-add-to-cart-section
+    .DetailDeal-left
+    .DetailDeal-item-counter
+    button.DetailDeal-disabled {
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1 / 1;
+    background: unset;
+    border: unset;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-detail-deal-page-section
+    .DetailDeal-left-side
+    .DetailDeal-add-to-cart-section
+    .DetailDeal-right
+    > button {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: var(--font-body) !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    background-color: var(--color-olive) !important;
+    color: var(--color-white) !important;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-detail-deal-page-section
+    .DetailDeal-left-side
+    .DetailDeal-add-to-cart-section
+    .DetailDeal-right
+    span {
+    font-size: 16px !important;
+  }
+
+  .order-page .upsell-widget-wrapper .menu-list-item-product-card {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-detail-deal-page-section
+    .DetailDeal-right-side
+    .DetailDeal-product-preview {
+    border-radius: 0px;
+    aspect-ratio: unset;
+    height: 315px;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-detail-deal-page-section
+    .DetailDeal-left-side
+    .DetailDeal-deal-page-section
+    .DetailDeal-heading
+    h1 {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-detail-deal-page-section
+    .DetailDeal-left-side
+    .DetailDeal-deal-page-section
+    .DetailDeal-heading
+    span {
+    font-size: 14px;
+    font-family: var(--font-body);
+    color: #030002;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .deal-menu-item-menu-section
+    .deal-menu-item-heading
+    h3 {
+    font-family: var(--font-heading);
+    font-size: 18px;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .modal-base-modal-wrapper-open
+    .modal-base-modal-dialog {
+    height: 100%;
+  }
+
+  .order-page .upsell-widget-wrapper .modal-menu-list-wrapper {
+    height: 100%;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-detail-deal-page-section
+    .DetailDeal-left-side
+    .DetailDeal-add-to-cart-section
+    .DetailDeal-right
+    button {
+    border-radius: 99999px;
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: var(--color-olive) !important;
+    color: var(--color-white) !important;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-detail-deal-page-section
+    .DetailDeal-left-side
+    .DetailDeal-add-to-cart-section
+    .DetailDeal-left
+    .DetailDeal-item-counter {
+    height: 48px;
+    border-radius: 99999px;
+    background-color: #f4f3e7;
+    border: 1px solid #efefef;
+    gap: 8px;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-detail-deal-page-section
+    .DetailDeal-left-side
+    .DetailDeal-add-to-cart-section
+    .DetailDeal-left
+    .DetailDeal-item-counter
+    button,
+  .order-page
+    .upsell-widget-wrapper
+    .DetailDeal-detail-deal-page
+    .DetailDeal-detail-deal-page-section
+    .DetailDeal-left-side
+    .DetailDeal-add-to-cart-section
+    .DetailDeal-left
+    .DetailDeal-item-counter
+    button.DetailDeal-disabled {
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1 / 1;
+    background: unset !important;
+    border: unset !important;
+  }
+}
