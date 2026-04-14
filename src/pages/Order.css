@@ -1,0 +1,377 @@
+.order-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.order-header {
+  padding: 16px 32px;
+  background-color: #dee0d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.order-logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: white;
+  padding: 2px;
+}
+
+.widget-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+/* ===========================
+   CSS Variable Theming
+   =========================== */
+#upsell_widget-content {
+  --upsell-text-primary: 0 0 0;
+  --upsell-text-secondary: 102 102 102;
+  --upsell-background: 255 255 255;
+  --upsell-button: 125 137 89;
+  --upsell-divider: 230 228 220;
+  --upsell-card-background: 255 255 255;
+  --upsell-body-font-family: "General Sans", system-ui, sans-serif;
+  --upsell-headline-font-family: "Playfair Display", Georgia, serif;
+  --upsell-body-text-transform: none;
+  --upsell-headline-text-transform: none;
+}
+
+/* ===========================
+   Widget Background — WHITE
+   =========================== */
+.upsell-widget-wrapper {
+  background-color: #fff !important;
+}
+
+/* ===========================
+   Typography
+   =========================== */
+
+/* Category headings — regular serif, BLACK, not italic */
+.upsell-widget-wrapper .productSection-product-section .productSection-categoryHeading {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-style: normal !important;
+  font-size: 28px !important;
+  color: #000 !important;
+  font-weight: 400 !important;
+}
+
+/* Welcome heading */
+.upsell-widget-wrapper .productPage-welcome-section h2 {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+}
+
+/* ALL text inside product cards — sans-serif */
+.upsell-widget-wrapper .menu-menu-item,
+.upsell-widget-wrapper .menu-menu-item * {
+  font-family: "General Sans", system-ui, sans-serif !important;
+}
+
+/* Product names */
+.upsell-widget-wrapper .menu-menu-item .menu-name,
+.upsell-widget-wrapper .menu-menu-item .menu-menu-name,
+.upsell-widget-wrapper .menu-menu-item .menu-menu-name * {
+  font-family: "General Sans", system-ui, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+}
+
+/* Description text */
+.upsell-widget-wrapper .menu-menu-item .menu-menu-description,
+.upsell-widget-wrapper .menu-menu-item .menu-menu-description * {
+  font-family: "General Sans", system-ui, sans-serif !important;
+  font-size: 12px !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+  font-style: normal !important;
+}
+
+/* Price */
+.upsell-widget-wrapper .menu-menu-item .menu-menu-footer,
+.upsell-widget-wrapper .menu-menu-item .menu-menu-footer * {
+  font-family: "General Sans", system-ui, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+}
+
+/* ===========================
+   Navbar
+   =========================== */
+.upsell-widget-wrapper .navbar-navbar-wrapper {
+  background-color: #fff !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 24px !important;
+}
+
+/* ===========================
+   Sidebar
+   =========================== */
+.upsell-widget-wrapper .productPage-side-bar .productPage-side-bar-item {
+  border-radius: 100px !important;
+  padding-left: 24px !important;
+  font-size: 15px !important;
+}
+
+.upsell-widget-wrapper .productPage-side-bar .productPage-side-bar-item.active,
+.upsell-widget-wrapper .productPage-side-bar .productPage-side-bar-item[class*="active"] {
+  background-color: #7d8959 !important;
+  color: #fff !important;
+}
+
+.upsell-widget-wrapper .productPage-side-bar .productPage-side-bar-item:hover {
+  background-color: rgba(125, 137, 89, 0.1) !important;
+  color: #7d8959 !important;
+}
+
+/* ===========================
+   Menu Item Cards — completely flat
+   =========================== */
+.upsell-widget-wrapper .menu-menu-item {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+}
+
+/* Image wrapper — sage bg visible around image */
+.upsell-widget-wrapper .menu-menu-item .menu-menu-image-wrapper {
+  background-color: #d9ddd0 !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  padding: 16px !important;
+  position: relative !important;
+}
+
+/* CRITICAL: override absolute positioning so sage padding shows */
+.upsell-widget-wrapper .menu-menu-item .menu-menu-image-wrapper .menu-menu-image {
+  position: static !important;
+  inset: auto !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.upsell-widget-wrapper .menu-menu-item .menu-menu-image-wrapper .menu-menu-image img {
+  object-fit: contain !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
+
+/* Kill ALL remaining white backgrounds and borders on any card child */
+.upsell-widget-wrapper .menu-menu-item *:not(button):not(span) {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.upsell-widget-wrapper .menu-menu-item .menu-menu-detail-wrapper,
+.upsell-widget-wrapper .menu-menu-item .menu-menu-detail,
+.upsell-widget-wrapper .menu-menu-item .menu-menu-name,
+.upsell-widget-wrapper .menu-menu-item .menu-menu-description,
+.upsell-widget-wrapper .menu-menu-item .menu-menu-footer,
+.upsell-widget-wrapper .menu-menu-item .menu-menu-action-wrapper {
+  background: transparent !important;
+}
+
+/* Text area — transparent, no card bg */
+.upsell-widget-wrapper .menu-menu-item .menu-menu-detail-wrapper {
+  background: transparent !important;
+  padding: 8px 0 0 0 !important;
+  border: none !important;
+}
+
+.upsell-widget-wrapper .menu-menu-item .menu-menu-detail {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.upsell-widget-wrapper .menu-menu-item .menu-menu-footer {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+/* 4 columns grid */
+.upsell-widget-wrapper .productSection-menus-wrapper {
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px !important;
+}
+
+.upsell-widget-wrapper .menu-menu-item:hover {
+  opacity: 0.85 !important;
+}
+
+/* ===========================
+   Buttons
+   =========================== */
+.upsell-widget-wrapper .global-btn {
+  --btn-background: #7d8959 !important;
+  --btn-color: #fff !important;
+  --btn-radius: 999px !important;
+  --btn-border-color: #7d8959 !important;
+  background-color: #7d8959 !important;
+  color: #fff !important;
+  border-radius: 999px !important;
+  border-color: #7d8959 !important;
+}
+
+.upsell-widget-wrapper .global-btn.global-btn-accent {
+  background-color: #fff !important;
+  color: #7d8959 !important;
+  border-color: #7d8959 !important;
+}
+
+.upsell-widget-wrapper .global-btn.global-btn-secondary {
+  background-color: transparent !important;
+  color: #7d8959 !important;
+  border-color: #7d8959 !important;
+}
+
+/* Add to Cart button on cards */
+.upsell-widget-wrapper .menu-menu-item button.menu-btn-add-to-cart span.menu-before-animation {
+  color: #7d8959 !important;
+  border: 1px solid #7d8959 !important;
+  border-radius: 999px !important;
+  padding: 8px 16px !important;
+}
+
+.upsell-widget-wrapper .menu-menu-item button.menu-btn-add-to-cart:hover span.menu-before-animation {
+  background: #7d8959 !important;
+  color: #fff !important;
+}
+
+/* Counter buttons (- 1 +) */
+.upsell-widget-wrapper .menu-menu-item .menu-menu-counter button,
+.upsell-widget-wrapper .menu-menu-counter button {
+  border: 1px solid #ccc !important;
+  border-radius: 50% !important;
+  background: transparent !important;
+  color: #333 !important;
+  width: 36px !important;
+  height: 36px !important;
+}
+
+/* Action wrapper on cards - keep visible, style properly */
+.upsell-widget-wrapper .menu-menu-item .menu-menu-action-wrapper {
+  background: transparent !important;
+  padding: 8px 0 0 0 !important;
+}
+
+/* ===========================
+   Cart & Bottom Bar
+   =========================== */
+.upsell-widget-wrapper [class*="cart-badge"] {
+  background-color: #7d8959 !important;
+}
+
+.upsell-widget-wrapper [class*="bottom-bar"],
+.upsell-widget-wrapper [class*="cart-bar"] {
+  background-color: #7d8959 !important;
+}
+
+.upsell-widget-wrapper input[type="checkbox"]:checked {
+  accent-color: #7d8959 !important;
+}
+
+.upsell-widget-wrapper a {
+  color: #7d8959 !important;
+}
+
+/* ===========================
+   Detail Page
+   =========================== */
+.upsell-widget-wrapper .DetailPage-detail-page .DetailPage-navigation .DetailPage-btn-back .DetailPage-chevron {
+  color: #7d8959 !important;
+}
+
+.upsell-widget-wrapper .DetailPage-detail-page .DetailPage-add-to-cart-section {
+  background-color: #fff !important;
+}
+
+.upsell-widget-wrapper .DetailPage-detail-page .DetailPage-product-image {
+  border-radius: 12px !important;
+}
+
+.upsell-widget-wrapper .VariantionSection-variantion-section .VariantionSection-variant-item .VariantionSection-heading h4 {
+  background-color: #7d8959 !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+}
+
+.upsell-widget-wrapper .VariableAttribute-variant-item-list-item.VariableAttribute-variant-item-list-item-selected {
+  background-color: white !important;
+  border: 2px solid #7d8959 !important;
+  border-radius: 10px !important;
+}
+
+.upsell-widget-wrapper .ExtraSection-extra-item-list-item.ExtraSection-extra-item-list-item-selected .ExtraSection-wrapper {
+  background-color: white !important;
+  border: 2px solid #7d8959 !important;
+  border-radius: 10px !important;
+}
+
+/* ===========================
+   Search
+   =========================== */
+.upsell-widget-wrapper input[type="search"],
+.upsell-widget-wrapper input[type="text"][class*="search"] {
+  border-radius: 999px !important;
+  border: 1px solid #e6e4dc !important;
+  background: #f4f3e7 !important;
+}
+
+/* ===========================
+   Login
+   =========================== */
+.upsell-widget-wrapper [class*="login"] button,
+.upsell-widget-wrapper [class*="auth"] button {
+  background-color: #7d8959 !important;
+  color: #fff !important;
+  border-radius: 999px !important;
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+@media (max-width: 600px) {
+  .order-header {
+    padding: 12px 16px;
+  }
+
+  .order-logo {
+    height: 40px;
+    width: 40px;
+  }
+
+  .widget-container {
+    padding: 0;
+  }
+
+  .upsell-widget-wrapper .productSection-menus-wrapper {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
