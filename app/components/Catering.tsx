@@ -5,7 +5,7 @@ export default function Catering() {
     <section className="w-full bg-off-white">
       <div className="container flex flex-col-reverse gap-13 lg:flex-row items-center pb-20 lg:pb-16.25 pt-15.5 lg:pt-16.25">
         <div className="flex-1">
-          <div className="flex flex-col max-w-102.5">
+          <div className="flex flex-col lg:max-w-102.5">
             <p className="font-body text-lg lg:text-xl font-medium uppercase text-olive mb-4 lg:mb-6">
               Catering
             </p>
@@ -20,7 +20,7 @@ export default function Catering() {
             </p>
             <Link
               to="/catering"
-              className="inline-flex w-full md:w-fit items-center justify-center rounded-full bg-olive min-w-64.75 p-4 font-body text-base font-medium uppercase text-white"
+              className="inline-flex w-full lg:w-fit items-center justify-center rounded-full bg-olive min-w-64.75 p-4 font-body text-base font-medium uppercase text-white"
             >
               Learn more
             </Link>

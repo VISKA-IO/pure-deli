@@ -22,25 +22,25 @@ const DATA = [
 export default function MorningEnergy() {
   return (
     <section className="w-full">
-      <div className="container pt-8 pb-9 lg:pb-12.5 lg:pt-12.5 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="container pt-8 pb-9 lg:pb-12.5 lg:pt-12.5 grid grid-cols-1 lg:grid-cols-2 gap-6">
         {DATA.map((item, i) => (
           <Link
             key={i}
             to={item.url}
             className={cn(
-              "rounded-[20px] h-full overflow-hidden pt-6 md:pt-12 flex flex-col",
+              "rounded-[20px] h-full overflow-hidden pt-6 lg:pt-12 flex flex-col",
               i % 2 === 0 ? "bg-cream" : "bg-sage",
             )}
           >
-            <div className="w-full flex justify-between gap-4 mb-6 px-4.5 md:px-10">
-              <h2 className="w-[80%] md:w-full font-heading text-[32px] md:text-[42px] font-normal leading-[1.15] text-black">
+            <div className="w-full flex justify-between gap-4 mb-6 px-4.5 lg:px-10">
+              <h2 className="w-[80%] lg:w-full font-heading text-[32px] lg:text-[42px] font-normal leading-[1.15] text-black">
                 {item.heading}
               </h2>
 
-              <ArrowRightIcon className="text-olive w-8 md:w-10 h-8 md:h-10" />
+              <ArrowRightIcon className="text-olive w-8 lg:w-10 h-8 lg:h-10" />
             </div>
 
-            <p className="font-body w-[90%] md:w-full text-sm md:text-base text-black leading-relaxed mb-5 px-4.5 md:px-10">
+            <p className="font-body w-[90%] lg:w-full text-sm lg:text-base text-black leading-relaxed mb-5 px-4.5 lg:px-10">
               {item.description}
             </p>
 
