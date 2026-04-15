@@ -292,6 +292,37 @@
   color: #212121;
 }
 
+.order-page .upsell-widget-wrapper .sendReceiptModal-title {
+  font-family: var(--font-heading);
+  font-size: 24px;
+}
+
+.order-page .upsell-widget-wrapper .sendReceiptModal-actions > button {
+  flex: 1;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .sendReceiptModal-actions
+  > button:first-child {
+  background-color: var(--color-off-white) !important;
+  color: var(--color-olive) !important;
+  border: 0;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .sendReceiptModal-actions
+  > button:last-child {
+  background-color: var(--color-olive) !important;
+  color: var(--color-white) !important;
+  border: 0;
+}
+
+.order-page .upsell-widget-wrapper .sendReceiptModal-input:focus {
+  border-color: var(--color-olive);
+}
+
 @media (min-width: 1024px) {
   .order-page
     .upsell-widget-wrapper
@@ -342,5 +373,12 @@
     button {
     background-color: var(--color-olive) !important;
     color: var(--color-white) !important;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .modal-base-modal-wrapper-open
+    .modal-base-modal-dialog {
+    justify-content: center;
   }
 }
