@@ -1,14 +1,9 @@
 import { WORDPRESS_BASE_URL } from "../utils/constants";
+import { formatDate } from "../utils/formatDate";
 import type { WPPost } from "../types/wordpress";
 import type { Route } from "./+types/news-detail";
 import { ArrowRightIcon } from "../components/_shared/icons/ArrowRightIcon";
 import { useNavigate } from "react-router";
-
-const dateFormatter = new Intl.DateTimeFormat("en-GB", {
-  day: "numeric",
-  month: "short",
-  year: "numeric",
-});
 
 export async function loader({ params }: Route.LoaderArgs) {
   const { slug } = params;
@@ -30,7 +25,7 @@ export async function loader({ params }: Route.LoaderArgs) {
 
   return {
     title: post.title.rendered,
-    date: dateFormatter.format(new Date(post.date)),
+    date: formatDate(post.date),
     imageUrl: post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ?? "",
     content: post.content.rendered,
   };

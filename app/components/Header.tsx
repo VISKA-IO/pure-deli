@@ -13,7 +13,7 @@ export default function Header() {
         <div className="container flex items-center justify-between h-full relative">
           <nav className="hidden lg:flex items-center gap-7">
             <Link
-              to="/menu"
+              to="/order"
               className="font-body text-base uppercase text-black"
             >
               Matseðill
@@ -82,45 +82,74 @@ export default function Header() {
       >
         <nav className="container flex flex-col items-center gap-6 pt-40">
           {[
-            { to: "/menu", label: "Matseðill" },
+            { to: "/order", label: "Matseðill" },
             { to: "/party", label: "Veislur" },
             { to: "/news", label: "Fréttir" },
+            { to: "/order#!/my-account/my-order", label: "Mínar síður" },
           ].map((item, i) => (
-            <Link
-              key={item.to}
-              to={item.to}
-              className={cn(
-                "font-body text-2xl uppercase text-black transition-all duration-300",
-                menuOpen
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 -translate-y-3",
-              )}
-              style={{
-                transitionDelay: menuOpen ? `${(i + 1) * 75}ms` : "0ms",
-              }}
-              onClick={() => setMenuOpen(false)}
+            <LinkWrapper
+              key={i}
+              href={item.to}
+              index={i}
+              menuOpen={menuOpen}
+              setMenuOpen={setMenuOpen}
             >
               {item.label}
-            </Link>
+            </LinkWrapper>
           ))}
-
-          <a
-            href="/order#!/my-account/my-order"
-            className={cn(
-              "font-body text-2xl uppercase text-black transition-all duration-300",
-              menuOpen
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 -translate-y-3",
-            )}
-            style={{
-              transitionDelay: menuOpen ? `${4 * 75}ms` : "0ms",
-            }}
-            onClick={() => setMenuOpen(false)}
-          >
-            Account
-          </a>
         </nav>
       </div>
     </>
   );
 }
+
+type LinkWrapperProps = {
+  href: string;
+  menuOpen: boolean;
+  index: number;
+  setMenuOpen: (open: boolean) => void;
+  children: React.ReactNode;
+};
+
+const LinkWrapper = ({
+  href,
+  menuOpen,
+  index,
+  children,
+  setMenuOpen,
+}: LinkWrapperProps) => {
+  if (href.includes("/order")) {
+    return (
+      <a
+        href={href}
+        className={cn(
+          "font-body text-2xl uppercase text-black transition-all duration-300",
+          menuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-3",
+        )}
+        style={{
+          transitionDelay: menuOpen ? `${(index + 1) * 75}ms` : "0ms",
+        }}
+        onClick={() => setMenuOpen(false)}
+      >
+        {children}
+      </a>
+    );
+  }
+
+  return (
+    <Link
+      key={href}
+      to={href}
+      className={cn(
+        "font-body text-2xl uppercase text-black transition-all duration-300",
+        menuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-3",
+      )}
+      style={{
+        transitionDelay: menuOpen ? `${(index + 1) * 75}ms` : "0ms",
+      }}
+      onClick={() => setMenuOpen(false)}
+    >
+      {children}
+    </Link>
+  );
+};

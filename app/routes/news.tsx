@@ -1,32 +1,29 @@
 import type { MetaFunction } from "react-router";
 import { NewsCard } from "../components/news/NewsCard";
 import { WORDPRESS_BASE_URL } from "../utils/constants";
+import { formatDate } from "../utils/formatDate";
 import type { WPPost } from "../types/wordpress";
 import type { Route } from "./+types/news";
 
 export const meta: MetaFunction = () => [{ title: "Fréttir - Pure Deli" }];
 
-const dateFormatter = new Intl.DateTimeFormat("en-GB", {
-  day: "numeric",
-  month: "short",
-  year: "numeric",
-});
-
 export async function loader() {
-  const response = await fetch(`${WORDPRESS_BASE_URL}/v2/posts?_embed`);
+  try {
+    const response = await fetch(`${WORDPRESS_BASE_URL}/v2/posts?_embed`);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
-  if (!response.ok) {
-    throw new Response("Failed to fetch articles", { status: response.status });
+    const posts = (await response.json()) as WPPost[];
+
+    return posts.map((post) => ({
+      title: post.title.rendered,
+      date: formatDate(post.date),
+      imageUrl: post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ?? "",
+      slug: post.slug,
+    }));
+  } catch (error) {
+    console.error("Failed to fetch articles:", error);
+    return [];
   }
-
-  const posts = (await response.json()) as WPPost[];
-
-  return posts.map((post) => ({
-    title: post.title.rendered,
-    date: dateFormatter.format(new Date(post.date)),
-    imageUrl: post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ?? "",
-    slug: post.slug,
-  }));
 }
 
 export default function News({ loaderData }: Route.ComponentProps) {
