@@ -163,6 +163,7 @@
   .active-detail-container
   .active-detail-title {
   font-family: var(--font-body);
+  font-weight: 500;
 }
 
 .order-page
@@ -171,6 +172,16 @@
   .active-detail-container
   .active-detail-title-progress {
   font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-step-detail
+  .active-detail-container
+  .active-detail-description {
+  font-family: var(--font-body);
+  color: #212121;
 }
 
 .order-page
@@ -246,6 +257,39 @@
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-thank-you-section
+  .active-check-icon {
+  outline-color: #0d4e4314;
+  background: var(--color-olive);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-thank-you-section
+  .active-thank-you-text {
+  gap: 0px;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-thank-you-section
+  .active-thank-you-text
+  h1 {
+  font-family: var(--font-heading);
+  color: var(--color-black);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-thank-you-section
+  .active-thank-you-text
+  p {
+  font-family: var(--font-body);
+  color: #212121;
 }
 
 @media (min-width: 1024px) {
