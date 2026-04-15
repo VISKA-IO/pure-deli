@@ -191,6 +191,31 @@
   background: var(--color-olive);
 }
 
+.order-page
+  .upsell-widget-wrapper
+  .empty-empty-component
+  .empty-text-information
+  h1 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .empty-empty-component
+  .empty-text-information
+  p {
+  font-family: var(--font-body);
+  color: #212121;
+}
+
+.order-page .upsell-widget-wrapper .empty-empty-component > button {
+  width: 100%;
+  background-color: var(--color-olive) !important;
+  color: var(--color-white) !important;
+  font-family: var(--font-body);
+}
+
 @media (min-width: 1024px) {
   .order-page
     .upsell-widget-wrapper
@@ -229,6 +254,11 @@
     p,
   .order-page .upsell-widget-wrapper .myAccountPage-menu-option:hover p {
     color: var(--color-black);
+  }
+
+  .order-page .upsell-widget-wrapper .empty-empty-component {
+    flex-direction: column;
+    align-items: start;
   }
 }
 
