@@ -1,0 +1,108 @@
+.order-page
+  .upsell-widget-wrapper
+  .orderMethod-order-method-section
+  .orderMethod-navigation
+  .orderMethod-btn-back {
+  color: var(--color-black);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .orderMethod-order-method-section
+  .orderMethod-navigation
+  .orderMethod-btn-back
+  svg {
+  color: var(--color-olive);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .orderMethod-order-method-section
+  .orderMethod-heading
+  h1 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .pickup-pickup-form-wrapper
+  .pickup-heading
+  h2 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.order-page .upsell-widget-wrapper .BranchItem-branch-card h4 {
+  font-family: var(--font-heading);
+}
+
+.order-page .upsell-widget-wrapper .BranchItem-branch-card p {
+  font-family: var(--font-body);
+  color: #212121;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .BranchItem-branch-card
+  .BranchItem-waiting-time
+  h6 {
+  font-family: var(--font-body);
+  color: #4b4a4d;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .BranchItem-branch-card
+  .BranchItem-opening-hours
+  h6 {
+  font-family: var(--font-body);
+  color: #4b4a4d;
+  font-weight: 500;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .BranchItem-branch-card
+  .BranchItem-opening-hours
+  button {
+  border-radius: 99999px;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .delivery-delivery-form-wrapper
+  .delivery-delivery-form
+  button {
+  background-color: var(--color-olive) !important;
+  color: var(--color-white) !important;
+  margin-top: 20px !important;
+  display: block !important;
+}
+
+.order-page .upsell-widget-wrapper .delivery-delivery-form-wrapper h2 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .order-page
+    .upsell-widget-wrapper
+    .orderMethod-order-method-section
+    .orderMethod-heading {
+    margin-top: 24px;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .orderMethod-order-method-section
+    .orderMethod-heading
+    h1 {
+    font-size: 24px;
+  }
+
+  .order-page .upsell-widget-wrapper .pickup-pickup-form-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

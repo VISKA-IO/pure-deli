@@ -5,6 +5,7 @@ import "../styles/productPage.css";
 import "../styles/loginPage.css";
 import "../styles/detailPage.css";
 import "../styles/dealPage.css";
+import "../styles/orderMethodPage.css";
 
 const WIDGET_SRC = "https://widget.upsell.is/dist/index.js?v=2025-04-13";
 const STORE_ID = "6970d21403e86bbbf6a6d40c";
