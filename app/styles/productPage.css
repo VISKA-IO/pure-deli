@@ -323,9 +323,6 @@
   }
 
   .order-page .upsell-widget-wrapper .menu-menu-counter button {
-    height: 100%;
-    width: auto;
-    aspect-ratio: 1 / 1;
     border: unset;
   }
 
@@ -333,6 +330,10 @@
     font-size: 16px !important;
     font-family: var(--font-body) !important;
     font-weight: 600 !important;
+  }
+
+  .order-page .upsell-widget-wrapper .menu-menu-counter {
+    gap: 0px;
   }
 }
 

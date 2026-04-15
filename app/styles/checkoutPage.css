@@ -1,0 +1,288 @@
+.order-page .upsell-widget-wrapper .checkout-navigation .checkout-btn-back {
+  color: var(--color-black);
+}
+
+.order-page .upsell-widget-wrapper .checkout-navigation .checkout-btn-back svg {
+  color: var(--color-olive);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .PickupSection-pickup-section
+  .PickupSection-pickup-card
+  .PickupSection-card-title
+  .PickupSection-title
+  h3 {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .PickupSection-pickup-section
+  .PickupSection-pickup-card
+  .PickupSection-card-title
+  .PickupSection-title
+  p {
+  font-family: var(--font-body);
+  color: #212121;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .PickupSection-pickup-section
+  .PickupSection-pickup-card
+  .PickupSection-btn-change
+  a {
+  background: var(--color-olive);
+  color: var(--color-white) !important;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .PickupSection-pickup-section
+  .PickupSection-branch-section
+  .PickupSection-branch-name
+  h5 {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .PickupSection-pickup-section
+  .PickupSection-branch-section
+  .PickupSection-branch-name
+  h6 {
+  font-family: var(--font-body);
+  color: #212121;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .OrderItemSection-section
+  .OrderItemSection-wrapper
+  .OrderItemSection-heading
+  .OrderItemSection-title {
+  font-family: var(--font-heading);
+}
+
+.order-page .upsell-widget-wrapper .OrderItem-cart-item .OrderItem-item-image {
+  border: 1px solid #e5e7e9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .OrderItem-cart-item
+  .OrderItem-content
+  .OrderItem-wrapper
+  .OrderItem-title
+  h3 {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .OrderItem-cart-item
+  .OrderItem-content
+  .OrderItem-wrapper
+  .OrderItem-action-wrapper
+  a {
+  font-family: var(--font-body);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .OrderItem-cart-item
+  .OrderItem-content
+  .OrderItem-detail-item
+  .OrderItem-extras
+  span {
+  font-family: var(--font-body);
+  color: #212121;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .OrderItem-cart-item
+  .OrderItem-content
+  .OrderItem-wrapper
+  .OrderItem-price
+  h3 {
+  font-family: var(--font-body);
+}
+
+.order-page .upsell-widget-wrapper .scheduledSection-section-title {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .PaymentMethodSection-section
+  .PaymentMethodSection-heading {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .OrderItem-cart-item
+  .OrderItem-content
+  .OrderItem-detail-item
+  h4 {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .OrderItemSection-order-note
+  .FormInput-form-wrapper
+  label,
+.upsell-widget-wrapper .scheduledSection-input-label {
+  font-family: var(--font-body);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .giftcard-giftcard-section
+  .giftcard-redeem-header-left
+  span {
+  font-family: var(--font-body);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .giftcard-giftcard-section
+  .giftcard-redeem-header-action {
+  font-family: var(--font-body);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .PaymentItem-payment-method-card
+  .PaymentItem-overview
+  .PaymentItem-left
+  .PaymentItem-payment-title {
+  font-family: var(--font-body);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .couponSection-coupon-section
+  .couponSection-empty-state
+  .couponSection-accordion-header
+  .couponSection-detail
+  h4 {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .couponSection-coupon-section
+  .couponSection-empty-state
+  .couponSection-form
+  button {
+  font-family: var(--font-body);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .OrderRecapSection-card
+  .OrderRecapSection-order-summary
+  h4 {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .OrderRecapSection-card
+  .OrderRecapSection-order-summary
+  .OrderRecapSection-summary-wrapper
+  .OrderRecapSection-summary-item
+  > span {
+  font-family: var(--font-body);
+  color: #212121;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .OrderRecapSection-card
+  .OrderRecapSection-order-summary
+  .OrderRecapSection-summary-wrapper
+  .OrderRecapSection-total
+  span:first-child {
+  font-family: var(--font-body);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .OrderRecapSection-card
+  .OrderRecapSection-order-summary
+  .OrderRecapSection-summary-wrapper
+  .OrderRecapSection-total
+  span:nth-child(2) {
+  font-family: var(--font-body);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .OrderRecapSection-footer-desktop
+  .OrderRecapSection-payment-method {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.order-page .upsell-widget-wrapper .OrderRecapSection-footer button {
+  font-family: var(--font-body);
+}
+
+@media (min-width: 768px) {
+  .order-page
+    .upsell-widget-wrapper
+    .PickupSection-pickup-section
+    .PickupSection-branch-section
+    .PickupSection-branch-name
+    h5 {
+    font-size: 16px;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .OrderItem-cart-item
+    .OrderItem-content
+    .OrderItem-wrapper
+    .OrderItem-title
+    h3 {
+    font-size: 16px;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .PickupSection-pickup-section
+    .PickupSection-pickup-card
+    .PickupSection-card-title
+    .PickupSection-title
+    h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-page
+    .upsell-widget-wrapper
+    .OrderItem-cart-item
+    .OrderItem-content
+    .OrderItem-wrapper
+    .OrderItem-title
+    h3 {
+    font-size: 16px;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .OrderItem-cart-item
+    .OrderItem-content
+    .OrderItem-detail-item
+    h4 {
+    font-size: 14px;
+  }
+}
