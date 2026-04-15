@@ -1,0 +1,278 @@
+.order-page
+  .upsell-widget-wrapper
+  .myAccountPage-my-account-page
+  .myAccountPage-navigation
+  .myAccountPage-btn-back {
+  color: var(--color-black);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .myAccountPage-my-account-page
+  .myAccountPage-navigation
+  .myAccountPage-btn-back
+  svg {
+  color: var(--color-olive);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .myAccountPage-sidebar-container
+  .myAccountPage-sidebar
+  .myAccountPage-menu
+  .myAccountPage-greeting-account
+  .myAccountPage-welcome-text {
+  font-family: var(--font-body);
+  color: var(--color-olive);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .myAccountPage-sidebar-container
+  .myAccountPage-sidebar
+  .myAccountPage-menu
+  .myAccountPage-greeting-account
+  .myAccountPage-account-name {
+  font-family: var(--font-heading);
+}
+
+.order-page .upsell-widget-wrapper .myAccountPage-menu-option p {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .myAccountPage-sidebar-container
+  .myAccountPage-sidebar
+  .myAccountPage-logout {
+  font-family: var(--font-body);
+}
+
+.order-page .upsell-widget-wrapper .myOrder-my-order .myOrder-title-dekstop {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-active-container
+  .active-active-title {
+  font-family: var(--font-heading);
+}
+
+.order-page .upsell-widget-wrapper .active-active-card:hover {
+  border-color: var(--color-olive);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-active-card
+  .active-first-section
+  .active-progress-information
+  .active-icon-container {
+  background: var(--color-olive);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-active-card
+  .active-first-section
+  .active-progress-information
+  .active-estimated-information
+  .active-estimated-hour {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-active-card
+  .active-first-section
+  .active-progress-information
+  .active-estimated-information
+  .active-estimated-text {
+  font-family: var(--font-body);
+  color: #212121;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-active-card
+  .active-second-section
+  .active-step-container {
+  border: 0;
+  background: var(--color-off-white);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-active-card
+  .active-second-section
+  .active-step-container
+  .active-step-number {
+  color: var(--color-black);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-active-card
+  .active-second-section
+  .active-step-name {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .history-history-container
+  .history-history-title {
+  font-family: var(--font-heading);
+}
+
+.order-page .upsell-widget-wrapper .history-history-card:hover {
+  border-color: var(--color-olive);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .history-history-card
+  .history-history-information
+  .history-icon-container {
+  background: var(--color-off-white);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .history-history-card
+  .history-history-information
+  .history-detail
+  .history-branch-name {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .history-history-card
+  .history-history-information
+  .history-detail
+  .history-order-date {
+  font-family: var(--font-body);
+  color: #212121;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .history-history-card
+  .history-price-information
+  .history-price-detail {
+  font-family: var(--font-body);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .accountDetail-account-detail
+  .accountDetail-title {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .accountDetail-account-detail
+  .accountDetail-form-container
+  label {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .accountDetail-account-detail
+  .accountDetail-save-button {
+  background: var(--color-olive);
+}
+
+@media (min-width: 1024px) {
+  .order-page
+    .upsell-widget-wrapper
+    .myAccountPage-menu-option.myAccountPage-active,
+  .order-page .upsell-widget-wrapper .myAccountPage-menu-option:hover {
+    background: var(--color-off-white);
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .myAccountPage-menu-option.myAccountPage-active
+    .myAccountPage-icon-container,
+  .order-page
+    .upsell-widget-wrapper
+    .myAccountPage-menu-option:hover
+    .myAccountPage-icon-container {
+    background: var(--color-olive);
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .myAccountPage-menu-option.myAccountPage-active
+    .myAccountPage-icon-container
+    .myAccountPage-icon,
+  .order-page
+    .upsell-widget-wrapper
+    .myAccountPage-menu-option:hover
+    .myAccountPage-icon-container
+    .myAccountPage-icon {
+    color: var(--color-white);
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .myAccountPage-menu-option.myAccountPage-active
+    p,
+  .order-page .upsell-widget-wrapper .myAccountPage-menu-option:hover p {
+    color: var(--color-black);
+  }
+}
+
+@media (max-width: 768px) {
+  .order-page
+    .upsell-widget-wrapper
+    .myAccountPage-sidebar-container
+    .myAccountPage-sidebar
+    .myAccountPage-menu
+    .myAccountPage-greeting-account {
+    background: var(--color-off-white);
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .myAccountPage-menu-option
+    .myAccountPage-menu-title
+    .myAccountPage-icon-container {
+    background: var(--color-olive);
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .myAccountPage-menu-option
+    .myAccountPage-menu-title
+    .myAccountPage-icon-container
+    .myAccountPage-icon {
+    color: var(--color-white);
+  }
+
+  .order-page .upsell-widget-wrapper .myAccountPage-menu-option p {
+    color: #212121;
+  }
+
+  .order-page .upsell-widget-wrapper .myAccountPage-menu-option {
+    border: 1px solid #e5e7e9;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .myAccountPage-sidebar-container
+    .myAccountPage-sidebar
+    .myAccountPage-menu
+    .myAccountPage-option {
+    gap: 8px;
+  }
+}
