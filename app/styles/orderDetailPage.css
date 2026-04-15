@@ -1,0 +1,302 @@
+.order-page
+  .upsell-widget-wrapper
+  .detail-detail-container
+  .detail-navigation
+  .detail-btn-back {
+  color: var(--color-black);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .detail-detail-container
+  .detail-navigation
+  .detail-btn-back
+  svg {
+  color: var(--color-olive);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-active-view-container
+  .active-second-section
+  .active-title {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .component-address-information-container
+  .component-address-detail
+  .component-location-name {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .component-address-information-container
+  .component-address-detail
+  .component-location-address {
+  font-family: var(--font-body);
+  color: #212121;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .component-address-information-container
+  .component-icon-container
+  .component-icon
+  svg {
+  color: var(--color-olive) !important;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .component-order-item
+  .component-wrapper
+  .component-quantity {
+  background: var(--color-off-white);
+  font-family: var(--font-body);
+  color: var(--color-black);
+  font-weight: 500;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .component-order-item
+  .component-wrapper
+  .component-item-name {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .component-order-item
+  .component-wrapper
+  .component-price
+  h3 {
+  font-family: var(--font-body);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .component-total-summary-container
+  .component-total-detail
+  div
+  p {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .component-total-summary-container
+  .component-total {
+  background: var(--color-off-white);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .component-total-summary-container
+  .component-total
+  p {
+  font-family: var(--font-heading);
+  font-weight: 500;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .component-total-summary-container
+  .component-total
+  h3 {
+  font-family: var(--font-heading);
+  color: var(--color-olive);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .component-payment-method-container
+  .component-payment-title {
+  font-family: var(--font-body);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .component-payment-method-container
+  .component-price {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.order-page .upsell-widget-wrapper .active-estimate-section {
+  background: var(--color-off-white);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-estimate-section
+  .active-icon-container {
+  background: var(--color-olive);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-estimate-section
+  .active-estimate-detail
+  .active-hour {
+  font-family: var(--font-body);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-estimate-section
+  .active-estimate-detail
+  .active-text {
+  font-family: var(--font-body);
+  color: #212121;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-step-detail
+  .active-detail-container
+  .active-detail-title {
+  font-family: var(--font-body);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-step-detail
+  .active-detail-container
+  .active-detail-title-progress {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .active-active-view-container
+  .active-first-section
+  button.global-btn.global-btn-accent {
+  background-color: var(--color-olive) !important;
+  color: var(--color-white) !important;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .history-brach-information-container
+  .history-icon-container {
+  background: var(--color-olive);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .history-brach-information-container
+  .history-branch-information
+  .history-branch-name {
+  font-family: var(--font-heading);
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .history-brach-information-container
+  .history-branch-information
+  .history-order-date {
+  font-family: var(--font-body);
+  color: #212121;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .history-history-view-container
+  .history-first-section
+  .history-main-content
+  .history-order-information
+  .history-title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .history-history-view-container
+  .history-first-section
+  > button {
+  background-color: var(--color-olive) !important;
+  color: var(--color-white) !important;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .history-history-view-container
+  .history-receipt-actions
+  > button {
+  background-color: var(--color-off-white) !important;
+  border: 0;
+  color: var(--color-olive) !important;
+}
+
+.order-page
+  .upsell-widget-wrapper
+  .component-order-item
+  .component-item-infos
+  div:last-child
+  > div
+  > div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@media (min-width: 1024px) {
+  .order-page
+    .upsell-widget-wrapper
+    .component-order-item
+    .component-wrapper
+    .component-item-name {
+    font-size: 18px;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .component-total-summary-container
+    .component-total
+    p {
+    font-size: 18px;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .history-brach-information-container
+    .history-branch-information
+    .history-branch-name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-page
+    .upsell-widget-wrapper
+    .component-order-item
+    .component-wrapper
+    .component-item-name {
+    font-size: 16px;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .component-total-summary-container
+    .component-total
+    p {
+    font-size: 18px;
+  }
+
+  .order-page
+    .upsell-widget-wrapper
+    .detail-detail-container
+    .detail-button-back-mobile
+    button {
+    background-color: var(--color-olive) !important;
+    color: var(--color-white) !important;
+  }
+}
