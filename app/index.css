@@ -112,4 +112,7 @@ body {
   font-family: "General Sans", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   background: #ffffff;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
