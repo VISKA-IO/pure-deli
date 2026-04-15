@@ -12,12 +12,12 @@ export default function Header() {
       <header className="sticky top-0 z-50 bg-header h-17 lg:h-18">
         <div className="container flex items-center justify-between h-full relative">
           <nav className="hidden lg:flex items-center gap-7">
-            <Link
-              to="/panta"
+            <a
+              href="/panta"
               className="font-body text-base uppercase text-black"
             >
               Matseðill
-            </Link>
+            </a>
             <Link
               to="/party"
               className="font-body text-base uppercase text-black"
