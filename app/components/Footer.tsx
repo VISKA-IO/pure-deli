@@ -1,18 +1,18 @@
 import { Link } from "react-router";
 
 const CATEGORIES = [
-  { name: "Vefjurnar", url: "/order?category=697223eb47d171e0186713d7" },
-  { name: "Salötin", url: "/order?category=697223fc7cf2afb6912549b6" },
-  { name: "Toastin", url: "/order?category=697223c789f4922277697fda" },
+  { name: "Vefjurnar", url: "/panta?category=697223eb47d171e0186713d7" },
+  { name: "Salötin", url: "/panta?category=697223fc7cf2afb6912549b6" },
+  { name: "Toastin", url: "/panta?category=697223c789f4922277697fda" },
   {
     name: "Morgunboost/Safar",
-    url: "/order?category=697223d5924865d6fca96f78",
+    url: "/panta?category=697223d5924865d6fca96f78",
   },
-  { name: "Drykkir", url: "/order?category=69722527c45a042a29570aa9" },
-  { name: "Boost - Millimál", url: "/order?category=6972242d164f1aa780e4a6d3" },
-  { name: "Veislubakkar", url: "/order?category=6972254889f4922277698308" },
-  { name: "Safahreinsun", url: "/order?category=69722540f1dfd80c8b323b18" },
-  { name: "Millimál", url: "/order?category=6972240c47d171e0186714aa" },
+  { name: "Drykkir", url: "/panta?category=69722527c45a042a29570aa9" },
+  { name: "Boost - Millimál", url: "/panta?category=6972242d164f1aa780e4a6d3" },
+  { name: "Veislubakkar", url: "/panta?category=6972254889f4922277698308" },
+  { name: "Safahreinsun", url: "/panta?category=69722540f1dfd80c8b323b18" },
+  { name: "Millimál", url: "/panta?category=6972240c47d171e0186714aa" },
 ];
 
 export default function Footer() {

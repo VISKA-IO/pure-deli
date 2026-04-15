@@ -7,14 +7,14 @@ const DATA = [
     description:
       "Á Pure deli finnurðu næringarríkum protein boost, sem eru drykkingar einstaklega frábært til að byrja daginn á.",
     imageUrl: "/images/good-energy.png",
-    url: "/order?category=6972242d164f1aa780e4a6d3",
+    url: "/panta?category=6972242d164f1aa780e4a6d3",
   },
   {
     heading: "Gott kaffi skiptir miklu mál",
     description:
       "Við opnum kl.08.00 á virkum dögum og vitum hvað það getur verið ljúft að taka með góðan kaffibolla í bílinn og njóta í umferðinni á leiðinni í vinnuna. ",
     imageUrl: "/images/good-coffee.png",
-    url: "/order?category=697223d5924865d6fca96f78",
+    url: "/panta?category=697223d5924865d6fca96f78",
   },
 ];
 

@@ -10,14 +10,14 @@ const menuItems = {
       description: "Kjúklingur, avókadó, tómatur, spínat og pestó",
       price: "2.990 kr",
       image: "/images/avocado-chicken.png",
-      url: "/order?category=697223eb47d171e0186713d7",
+      url: "/panta?category=697223eb47d171e0186713d7",
     },
     {
       name: "Serrano vefja",
       description: "Serrano hráskinka, pestó , Mozzarella, spínat og tómatar",
       price: "3.290 kr",
       image: "/images/serrano-vefja.png",
-      url: "/order?category=697223eb47d171e0186713d7",
+      url: "/panta?category=697223eb47d171e0186713d7",
     },
     {
       name: "Indian Chicken",
@@ -25,7 +25,7 @@ const menuItems = {
         "Indian chicken, spínat, papríka og pestó (Inniheldur sojasósu/gluten)",
       price: "3.190 kr",
       image: "/images/indian-chicken.png",
-      url: "/order?category=697223eb47d171e0186713d7",
+      url: "/panta?category=697223eb47d171e0186713d7",
     },
   ],
   Salötin: [
@@ -35,7 +35,7 @@ const menuItems = {
         "Salatblanda, avókadó, gúrka , cherry tómatar, jarðaber, bláber, döðlur, hummus og pestó",
       price: "3.190 kr",
       image: "/images/vegan-salat-new.png",
-      url: "/order?category=697223fc7cf2afb6912549b6",
+      url: "/panta?category=697223fc7cf2afb6912549b6",
     },
     {
       name: "Tuna Deli Salat",
@@ -43,7 +43,7 @@ const menuItems = {
         "Túnfiskur, salatblanda, avocado, gúrka , cherry tómatar, jarðaber, egg og pestó",
       price: "3.290 kr",
       image: "/images/tuna-deli-salat-new.png",
-      url: "/order?category=697223fc7cf2afb6912549b6",
+      url: "/panta?category=697223fc7cf2afb6912549b6",
     },
     {
       name: "Indian Chicken Salat",
@@ -51,7 +51,7 @@ const menuItems = {
         "Salat blanda, kjúklingur , avocado, gúrka , cherry tómatar, jarðaber, egg & pestó (Inniheldur sojasósu/gluten)",
       price: "3.390 kr",
       image: "/images/indian-chicken-salat-new.png",
-      url: "/order?category=697223fc7cf2afb6912549b6",
+      url: "/panta?category=697223fc7cf2afb6912549b6",
     },
   ],
   Toastin: [
@@ -60,7 +60,7 @@ const menuItems = {
       description: "Ristað súrdeigsbrauð, pestó, avókadó og tómatar.",
       price: "2.990 kr",
       image: "/images/avocado-toast.png",
-      url: "/order?category=697223c789f4922277697fda",
+      url: "/panta?category=697223c789f4922277697fda",
     },
     {
       name: "Serrano - mozzarella toast",
@@ -68,7 +68,7 @@ const menuItems = {
         "Tvær ristaðar súrdeigsbrauðsneiðar með pestó, mozzarella, serrano hráskinku, tómatar & klettasalat",
       price: "3.290 kr",
       image: "/images/serrano-mozzarella-toast.png",
-      url: "/order?category=697223c789f4922277697fda",
+      url: "/panta?category=697223c789f4922277697fda",
     },
     {
       name: "Tuna toast",
@@ -76,7 +76,7 @@ const menuItems = {
         "Tvær ristaðar súrdeigsbrauðsneiðar með pestó, tuna, avocado og tómat og pestó, tuna, jalapeno og tabasco.",
       price: "2.990 kr",
       image: "/images/tuna-toast.png",
-      url: "/order?category=697223c789f4922277697fda",
+      url: "/panta?category=697223c789f4922277697fda",
     },
   ],
 };

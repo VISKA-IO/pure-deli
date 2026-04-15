@@ -16,7 +16,7 @@ export default function Hero() {
             Bragðgóður, ferskur & hollur matur
           </p>
           <a
-            href="/order"
+            href="/panta"
             className="inline-flex items-center justify-center rounded-full bg-accent px-14.5 py-3.5 lg:py-4 font-body text-base lg:text-lg font-medium uppercase text-black"
           >
             Panta mat

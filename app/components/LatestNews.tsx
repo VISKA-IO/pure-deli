@@ -23,7 +23,7 @@ export default function LatestNews({ items }: LatestNewsProps) {
             Nýjast
           </h2>
           <Link
-            to="/news"
+            to="/frettir"
             className="font-body text-base font-medium uppercase text-olive flex items-center gap-2"
           >
             Sjá meira
@@ -34,7 +34,7 @@ export default function LatestNews({ items }: LatestNewsProps) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {items.map((item) => (
             <Link
-              to={`/news/${item.slug}`}
+              to={`/frettir/${item.slug}`}
               key={item.slug}
               className="flex items-stretch gap-6 lg:rounded-[20px] lg:bg-off-white lg:p-5"
             >

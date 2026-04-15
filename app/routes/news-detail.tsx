@@ -55,10 +55,10 @@ export default function NewsDetail({ loaderData }: Route.ComponentProps) {
           className="flex items-center gap-2 text-olive font-medium text-base uppercase mb-6 cursor-pointer"
         >
           <ArrowRightIcon className="-rotate-180" />
-          Back
+          Til baka
         </button>
 
-        <p className="font-body text-sm text-black mb-1">{date}</p>
+        <p className="font-body text-base text-black mb-1">{date}</p>
         <h1
           className="font-heading text-black text-[30px] lg:text-[45px] leading-tight mb-7 lg:mb-11"
           dangerouslySetInnerHTML={{ __html: title }}

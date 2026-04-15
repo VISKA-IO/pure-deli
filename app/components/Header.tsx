@@ -13,7 +13,7 @@ export default function Header() {
         <div className="container flex items-center justify-between h-full relative">
           <nav className="hidden lg:flex items-center gap-7">
             <Link
-              to="/order"
+              to="/panta"
               className="font-body text-base uppercase text-black"
             >
               Matseðill
@@ -25,7 +25,7 @@ export default function Header() {
               Veislur
             </Link>
             <Link
-              to="/news"
+              to="/frettir"
               className="font-body text-base uppercase text-black"
             >
               Fréttir
@@ -59,13 +59,13 @@ export default function Header() {
 
           <div className="flex items-center gap-5.5">
             <a
-              href="/order#!/my-account/my-order"
+              href="/panta#!/my-account/my-order"
               className="hidden md:block font-body text-base uppercase text-black"
             >
               Mínar síður
             </a>
             <a
-              href="/order"
+              href="/panta"
               className="rounded-full bg-olive px-4 py-2 lg:py-2.5 font-body font-medium text-sm lg:text-base uppercase text-white"
             >
               Panta
@@ -82,10 +82,10 @@ export default function Header() {
       >
         <nav className="container flex flex-col items-center gap-6 pt-40">
           {[
-            { to: "/order", label: "Matseðill" },
+            { to: "/panta", label: "Matseðill" },
             { to: "/party", label: "Veislur" },
-            { to: "/news", label: "Fréttir" },
-            { to: "/order#!/my-account/my-order", label: "Mínar síður" },
+            { to: "/frettir", label: "Fréttir" },
+            { to: "/panta#!/my-account/my-order", label: "Mínar síður" },
           ].map((item, i) => (
             <LinkWrapper
               key={i}
@@ -118,7 +118,7 @@ const LinkWrapper = ({
   children,
   setMenuOpen,
 }: LinkWrapperProps) => {
-  if (href.includes("/order")) {
+  if (href.includes("/panta")) {
     return (
       <a
         href={href}
