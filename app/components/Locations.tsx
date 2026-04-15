@@ -26,7 +26,7 @@ export default function Locations() {
     <section className="w-full">
       <div className="w-full container pt-9 lg:pt-12.5 pb-25 lg:pb-37.5">
         <p className="font-body text-lg lg:text-xl font-medium uppercase text-olive mb-3.5">
-          Visit Store
+          Heimsæktu okkur
         </p>
         <h2 className="font-heading text-[38px] lg:text-[52px] font-normal text-black mb-8 lg:mb-10">
           Útibúin okkar
@@ -47,7 +47,7 @@ export default function Locations() {
                   </h3>
 
                   <div className="lg:hidden mt-2 h-fit flex font-body text-base font-medium uppercase text-olive items-center gap-1">
-                    Open map
+                    Opna kort
                     <ArrowRightIcon className="w-4.5 h-4.5" />
                   </div>
                 </div>
@@ -80,7 +80,7 @@ export default function Locations() {
                 </div>
 
                 <div className="lg:flex hidden font-body mt-auto text-base font-medium uppercase text-olive items-center gap-2">
-                  Open map
+                  Opna kort
                   <ArrowRightIcon className="w-6 h-6" />
                 </div>
               </div>

@@ -13,6 +13,7 @@ export type WPPost = {
   slug: string;
   title: WPRenderedText;
   excerpt: WPRenderedText;
+  content: WPRenderedText;
   _embedded?: {
     "wp:featuredmedia"?: WPFeaturedMedia[];
   };

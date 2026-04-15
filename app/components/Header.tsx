@@ -16,19 +16,19 @@ export default function Header() {
               to="/menu"
               className="font-body text-base uppercase text-black"
             >
-              Menu
+              Matseðill
             </Link>
             <Link
               to="/party"
               className="font-body text-base uppercase text-black"
             >
-              Party
+              Veislur
             </Link>
             <Link
               to="/news"
               className="font-body text-base uppercase text-black"
             >
-              News
+              Fréttir
             </Link>
           </nav>
 
@@ -62,13 +62,13 @@ export default function Header() {
               href="/order#!/my-account/my-order"
               className="hidden md:block font-body text-base uppercase text-black"
             >
-              Account
+              Mínar síður
             </a>
             <a
               href="/order"
               className="rounded-full bg-olive px-4 py-2 lg:py-2.5 font-body font-medium text-sm lg:text-base uppercase text-white"
             >
-              Order
+              Panta
             </a>
           </div>
         </div>
@@ -82,9 +82,9 @@ export default function Header() {
       >
         <nav className="container flex flex-col items-center gap-6 pt-40">
           {[
-            { to: "/menu", label: "Menu" },
-            { to: "/party", label: "Party" },
-            { to: "/news", label: "News" },
+            { to: "/menu", label: "Matseðill" },
+            { to: "/party", label: "Veislur" },
+            { to: "/news", label: "Fréttir" },
           ].map((item, i) => (
             <Link
               key={item.to}

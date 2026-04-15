@@ -4,7 +4,7 @@ import { WORDPRESS_BASE_URL } from "../utils/constants";
 import type { WPPost } from "../types/wordpress";
 import type { Route } from "./+types/news";
 
-export const meta: MetaFunction = () => [{ title: "News - Pure Deli" }];
+export const meta: MetaFunction = () => [{ title: "Fréttir - Pure Deli" }];
 
 const dateFormatter = new Intl.DateTimeFormat("en-GB", {
   day: "numeric",
@@ -36,7 +36,7 @@ export default function News({ loaderData }: Route.ComponentProps) {
     <section className="w-full pt-10 lg:pt-15.5 pb-20 lg:pb-25">
       <div className="container">
         <h1 className="font-heading text-black lg:text-center text-[40px] lg:text-[52px] mb-7 lg:mb-13">
-          News
+          Fréttir
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-7.5">
           {articles.map((article) => (

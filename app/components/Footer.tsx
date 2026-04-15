@@ -32,7 +32,7 @@ export default function Footer() {
 
           <div>
             <h4 className="font-heading text-xl text-black mb-4.5">
-              Contact us
+              Hafðu samband
             </h4>
             <div className="space-y-2.5">
               <p className="font-body text-sm lg:text-base text-black flex items-center gap-2">
@@ -71,7 +71,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-heading text-xl text-black mb-4.5">Menu</h4>
+            <h4 className="font-heading text-xl text-black mb-4.5">
+              Matseðill
+            </h4>
             <ul className="space-y-3">
               {CATEGORIES.map((cat) => (
                 <li key={cat.name}>
@@ -88,7 +90,7 @@ export default function Footer() {
 
           <div>
             <h4 className="font-heading text-xl text-black mb-4.5">
-              Social media
+              Samfélagsmiðlar
             </h4>
             <ul className="space-y-3">
               <li>
@@ -133,7 +135,7 @@ export default function Footer() {
                   to="/privacy"
                   className="font-body text-sm lg:text-base text-black hover:underline"
                 >
-                  Privacy policy
+                  Persónuverndarstefna
                 </Link>
               </li>
               <li>
@@ -141,7 +143,7 @@ export default function Footer() {
                   to="/terms"
                   className="font-body text-sm lg:text-base text-black hover:underline"
                 >
-                  Terms use
+                  Notkunarskilmálar
                 </Link>
               </li>
               <li>

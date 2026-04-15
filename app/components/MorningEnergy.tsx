@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import { ArrowRightIcon } from "./_shared/icons/ArrowRightIcon";
 import { cn } from "../utils/cn";
 
@@ -8,14 +7,14 @@ const DATA = [
     description:
       "Á Pure deli finnurðu næringarríkum protein boost, sem eru drykkingar einstaklega frábært til að byrja daginn á.",
     imageUrl: "/images/good-energy.png",
-    url: "/news",
+    url: "/order?category=6972242d164f1aa780e4a6d3",
   },
   {
     heading: "Gott kaffi skiptir miklu mál",
     description:
       "Við opnum kl.08.00 á virkum dögum og vitum hvað það getur verið ljúft að taka með góðan kaffibolla í bílinn og njóta í umferðinni á leiðinni í vinnuna. ",
     imageUrl: "/images/good-coffee.png",
-    url: "/news",
+    url: "/order?category=697223d5924865d6fca96f78",
   },
 ];
 
@@ -24,9 +23,9 @@ export default function MorningEnergy() {
     <section className="w-full">
       <div className="container pt-8 pb-9 lg:pb-12.5 lg:pt-12.5 grid grid-cols-1 lg:grid-cols-2 gap-6">
         {DATA.map((item, i) => (
-          <Link
+          <a
             key={i}
-            to={item.url}
+            href={item.url}
             className={cn(
               "rounded-[20px] h-full overflow-hidden pt-6 lg:pt-12 flex flex-col",
               i % 2 === 0 ? "bg-cream" : "bg-sage",
@@ -51,7 +50,7 @@ export default function MorningEnergy() {
                 className="w-full h-auto object-contain"
               />
             </div>
-          </Link>
+          </a>
         ))}
       </div>
     </section>
