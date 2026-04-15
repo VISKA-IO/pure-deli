@@ -37,10 +37,10 @@ app/
   routes/              # file-based routes (registered in app/routes.ts)
     _layout.tsx        # wraps routes with Header + Footer
     home.tsx
-    order.tsx          # embeds upsell.is order widget
+    order.tsx          # /panta — embeds upsell.is order widget
     order.css          # widget overrides (split by sub-page)
-    news.tsx           # /news list
-    news-detail.tsx    # /news/:slug
+    news.tsx           # /frettir — news list
+    news-detail.tsx    # /frettir/:slug
     privacy-policy.tsx # /personuverndarstefna
   styles/              # scoped CSS imported from order.tsx for widget theming
   types/
@@ -62,7 +62,8 @@ Routes are **explicitly declared** in `app/routes.ts` — when adding a route, r
 
 ### Language / translations
 - User-facing copy is **Icelandic**. When adding text, write it in Icelandic.
-- Common terms: Matseðill (menu), Veislur (parties), Fréttir (news), Mínar síður (my account), Panta (order), Hafðu samband (contact us), Lesa meira (read more), Sjá meira (view more), Nýjast (latest).
+- **URL paths are also Icelandic** — e.g. `/panta` (order), `/frettir` (news), `/personuverndarstefna` (privacy policy). Follow this convention when adding new routes.
+- Common terms: Matseðill (menu), Veislur (parties), Fréttir (news), Mínar síður (my account), Panta (order), Hafðu samband (contact us), Lesa meira (read more), Sjá meira (view more), Nýjast (latest), Til baka (back).
 
 ### Styling
 - **Tailwind v4** — theme tokens live in `@theme inline` in `app/index.css` (colors: `olive`, `sage`, `cream`, `footer`, `header`, `hero`, `off-white`, `accent`, `dark`; fonts: `font-heading`, `font-body`).
@@ -99,8 +100,9 @@ Routes are **explicitly declared** in `app/routes.ts` — when adding a route, r
 - **`erasableSyntaxOnly` vs third-party types.** See above — it blocks packages that ship `const enum` (e.g. `wp-types`). Prefer hand-written minimal types.
 - **Favicon caching.** Browsers heavily cache favicons. After changing favicon markup, hard reload or use incognito. SVG favicons also take precedence over PNGs in modern browsers.
 - **`STORE_ID` in `app/routes/order.tsx`.** There's a commented-out VISKA store ID used for local dev. **Commits must keep the Pure Deli store ID active** (`6970d21403e86bbbf6a6d40c`). If you see the diff toggling to the VISKA ID, revert that line before committing.
-- **News detail URLs use the WP slug**, not the full WP permalink. The loader maps `post.slug` → `/news/:slug`.
+- **News detail URLs use the WP slug**, not the full WP permalink. The loader maps `post.slug` → `/frettir/:slug`.
 - **The order widget** is loaded via a `<script>` tag in `app/routes/order.tsx` that pushes to `window.upsell_widget.q`. The ambient type for `window.upsell_widget` lives in `app/types/global.d.ts`. Widget-internal class names are targeted by scoped CSS in `app/styles/*.css` (per sub-page: orderMethodPage, checkoutPage, myAccountPage, orderDetailPage).
+- **Link to `/panta` with `<a>`, not `<Link>`.** The order page embeds a third-party widget that needs a full page load to initialize cleanly. SPA navigation via `<Link>` breaks the widget. `Header.tsx` has a `LinkWrapper` that checks `href.includes("/panta")` and renders an `<a>` instead. Follow the same convention anywhere you link to `/panta`.
 - **Tailwind v4 theme** — there is no `tailwind.config.js`. Add tokens in `@theme inline` within `app/index.css`.
 
 ## Common tasks
