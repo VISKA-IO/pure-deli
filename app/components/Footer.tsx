@@ -132,7 +132,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  to="/privacy"
+                  to="/personuverndarstefna"
                   className="font-body text-sm lg:text-base text-black hover:underline"
                 >
                   Persónuverndarstefna
@@ -140,7 +140,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/terms"
+                  to="/personuverndarstefna"
                   className="font-body text-sm lg:text-base text-black hover:underline"
                 >
                   Notkunarskilmálar
