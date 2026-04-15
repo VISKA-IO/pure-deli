@@ -8,10 +8,11 @@ import "../styles/dealPage.css";
 import "../styles/orderMethodPage.css";
 import "../styles/checkoutPage.css";
 import "../styles/myAccountPage.css";
+import "../styles/orderDetailPage.css";
 
 const WIDGET_SRC = "https://widget.upsell.is/dist/index.js?v=2025-04-13";
-// const STORE_ID = "6970d21403e86bbbf6a6d40c"; // Pure Deli
-const STORE_ID = "6577142c338bfd38f9a79d2a"; // VISKA
+const STORE_ID = "6970d21403e86bbbf6a6d40c"; // Pure Deli
+// const STORE_ID = "6577142c338bfd38f9a79d2a"; // VISKA
 
 export const meta: MetaFunction = () => [{ title: "Order - Pure Deli" }];
 
