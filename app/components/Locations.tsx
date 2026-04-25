@@ -38,7 +38,7 @@ export default function Locations() {
               href={loc.mapUrl}
               target="_blank"
               key={idx}
-              className="flex flex-col-reverse lg:flex-row lg:items-stretch gap-5.5 lg:gap-40 rounded-[20px] bg-off-white p-4.5 lg:p-6"
+              className="flex flex-col-reverse lg:flex-row lg:items-stretch gap-5.5 lg:gap-5 rounded-[20px] bg-off-white p-4.5 lg:p-6"
             >
               <div className="flex-1 flex flex-col">
                 <div className="w-full flex gap-5">
@@ -85,7 +85,7 @@ export default function Locations() {
                 </div>
               </div>
 
-              <div className="w-full lg:w-61.75 h-49 lg:h-auto lg:aspect-92/100 overflow-hidden rounded-[10px]">
+              <div className="w-full lg:w-[45%] h-49 lg:h-fit lg:aspect-92/100 overflow-hidden rounded-[10px]">
                 <img
                   src={loc.image}
                   alt={loc.name}

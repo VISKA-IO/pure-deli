@@ -43,7 +43,7 @@ export default function Order() {
 
   return (
     <div className="order-page">
-      <div className="widget-container md:container!">
+      <div className="widget-container max-w-7xl!">
         <div style={{ maxWidth: "unset" }} id="upsell-widget" />
       </div>
     </div>
