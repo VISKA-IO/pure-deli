@@ -79,7 +79,7 @@ export default function NewsDetail({ loaderData }: Route.ComponentProps) {
   return (
     <>
       <section className="w-full pt-10 lg:pt-15.5 pb-20 lg:pb-25">
-        <div className="container max-w-183.5">
+        <div className="container max-w-183.5!">
           <button
             type="button"
             onClick={() => navigate(-1)}
