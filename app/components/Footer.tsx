@@ -77,12 +77,12 @@ export default function Footer() {
             <ul className="space-y-3">
               {CATEGORIES.map((cat) => (
                 <li key={cat.name}>
-                  <Link
-                    to={cat.url}
+                  <a
+                    href={cat.url}
                     className="font-body text-sm lg:text-base text-black hover:underline"
                   >
                     {cat.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
