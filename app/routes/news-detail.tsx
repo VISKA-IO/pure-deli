@@ -114,7 +114,7 @@ export default function NewsDetail({ loaderData }: Route.ComponentProps) {
         <section className="w-full bg-[#F4F3E7] py-13 lg:py-20">
           <div className="container">
             <h2 className="font-heading text-black text-[28px] lg:text-[42px] mb-7 lg:mb-10">
-              Other blog
+              Aðrar fréttir
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-7.5">
               {otherPosts.map((post) => (
