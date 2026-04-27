@@ -19,12 +19,6 @@ export default function Header() {
               Matseðill
             </a>
             <Link
-              to="/party"
-              className="font-body text-base uppercase text-black"
-            >
-              Veislur
-            </Link>
-            <Link
               to="/frettir"
               className="font-body text-base uppercase text-black"
             >
@@ -83,7 +77,6 @@ export default function Header() {
         <nav className="container flex flex-col items-center gap-6 pt-40">
           {[
             { to: "/panta", label: "Matseðill" },
-            { to: "/party", label: "Veislur" },
             { to: "/frettir", label: "Fréttir" },
             { to: "/panta#!/my-account/my-order", label: "Mínar síður" },
           ].map((item, i) => (
